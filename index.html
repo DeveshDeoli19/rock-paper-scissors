@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="score-board">
+        <div class="badge" id="user-lable">User</div>
+        <div class="badge" id="computer-label">Comp</div>
+        <span id="user-score">0</span> <span id="colon"> : </span><span id="computer-score">0</span>
+    </div>
+    <div class="reset">
+        <input type="button" value="Reset" id="btn">
+    </div>
+    <div class="result">
+        <p>Select Your Choice</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r" title="Rock"><img src="" class="fas fa-hand-rock fa-5x" alt=""></div>
+        <div class="choice" id="p" title="Paper"><img src="" class="fas fa-hand-paper fa-5x" alt=""></div>
+        <div class="choice" id="s" title="Scissors"><img src="" class="fas fa-hand-scissors fa-5x" alt=""></div>
+    </div>
+
+    <p id="action">Make your move.</p>
+    <script src="script.js"></script>
+</body>
+
+</html>

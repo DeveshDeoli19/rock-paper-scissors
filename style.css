@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #25272e;
+}
+
+header {
+    padding: 1em;
+    background-color: white;
+}
+
+header h1 {
+    color: #25272e;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+}
+
+.score-board {
+    margin: 2em auto;
+    width: 12%;
+    border: 2px solid white;
+    color: white;
+    font-size: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.6em;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.badge {
+    background-color: #E25840;
+    font-size: 15px;
+    padding: 0.2em;
+}
+
+.reset{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#btn{
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 0 0.6em;
+    border-radius: 20px;
+    border-color: black;
+    transition: all 0.3s ease; 
+}
+
+#btn:hover{
+    cursor: pointer;
+    background-color: #a140e2;
+}
+
+#user-lable {
+    position: absolute;
+    top: 2em;
+    left: -1.2em;
+    padding: 0.2em;
+}
+
+#computer-label {
+    position: absolute;
+    top: 2em;
+    right: -1.5em;
+}
+
+.result {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.result p {
+    text-align: center;
+}
+
+.choices {
+    margin: 2em;
+    text-align: center;
+}
+
+.choice {
+    border-radius: 50%;
+    border: 2px solid white;
+    display: inline-block;
+    margin: 0 2em;
+    padding: 1.6em;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #a140e2;
+    color: black;
+}
+
+#action {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.green-glow {
+    border: 2px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+    border: 2px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow {
+    border: 2px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
+
+@media (max-width: 790px){
+
+    .choice{
+        width:20%;
+        height: 20%;
+        border: none;
+        padding: 1em;
+    }
+
+    .choice:hover{
+        background:none;
+        border: none;
+        box-shadow:none;
+    }
+
+    .score-board{
+        width: 60%;
+    }
+
+}
+
+@media (max-width:550px){
+    .choices{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+}
+    
