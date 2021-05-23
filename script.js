@@ -111,4 +111,6 @@ function reset(){
         userScore_span.innerHTML = 0;
         computerScore_span.innerHTML = 0;
         result_p.innerHTML = "Select Your Choice"
+        userScore = 0;
+        computerScore = 0;
 }
